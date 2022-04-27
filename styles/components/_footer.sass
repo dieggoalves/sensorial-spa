@@ -1,0 +1,22 @@
+import styles/abstract/_variaveis.scss
+
+// MIXIN CRIADO APENAS PARA TESTES
+@mixin bg-cores($lado, $cores...)
+    @if $lado == left
+        background: linear-gradient(to left, $cores)
+    @else
+        background: linear-gradient(to right, $cores)
+
+.rodape
+    text-align: center
+    font-size: $tamanho-do-texto / 2
+    border-top: 2px solid $cor-primaria
+    margin-top: 1rem
+    padding: 1.5rem
+    background-color: $cor-primaria
+    // @include bg-cores("right", $cor-primaria, $cor-secundaria, $cor-terciaria) <-- TESTE DO MIXIN DE BACKGROUND
+
+    .rodape__texto
+        color: white
+        font-size: $tamanho-do-texto / 2.8
+        font-weight: 300

@@ -1,0 +1,36 @@
+@import '../abstract/variaveis';
+
+#mensagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+
+    .mensagem__container{
+        width: 940px;
+        text-align: center;
+
+        .mensagem__img{
+            width: 45%;
+        }
+
+        .mensagem__titulo{
+            font-size: $tamanho-do-texto / 1.3;
+            color: $cor-secundaria;
+        }
+
+        .mensagem__subtitulo{
+            font-size: $tamanho-do-texto / 2;
+            color: $cor-primaria;
+            margin: 0.5rem 0 1rem 0;
+        }
+
+        .mensagem__texto{
+            font-size: $tamanho-do-texto / 2.5;
+            color: $cor-primaria;
+            margin: 0.5rem;
+            font-weight: 300;
+            line-height: 1.5rem;
+        }
+    }
+}
